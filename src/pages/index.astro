@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card2.jsx';
+import Swiper from '../components/Swiper';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -36,6 +37,7 @@ import Card from '../components/Card2.jsx';
 		<h1>Tremendinus</h1>
 	</main>
 	<Card/>
+	<Swiper client:load/>
 </Layout>
 
 <style>

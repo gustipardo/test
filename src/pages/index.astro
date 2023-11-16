@@ -1,16 +1,39 @@
 ---
-import Layout from '../Layout/Layout.astro';
+import Layout from '../Layout/Layout1.astro';
 import Card from '../components/Card2.jsx';
+import MySwiper from '../components/MySwiper';
 import Swiper from '../components/Swiper';
 
-const allPosts = await Astro.glob("./projects/*.md");
-const currentPath = Astro.url.pathname;
+const allPosts = await Astro.glob("../pages/projects/*.md");
+const currentPath = '/projects/Barrio_Walsh';
     
 
 
 const currentProject = allPosts.find(post => post.url === currentPath);
+
+const imagenes = currentProject?.frontmatter.imagenes;
 const project = currentProject;
+const name = currentProject?.frontmatter.name;
+const ProjectTitle = currentProject?.frontmatter.title;
+console.log("Imágenes:", allPosts);
+console.log("Imágenes:", currentPath);
+console.log("Imágenes:", currentProject);
+console.log("Imágenes:", imagenes);
 console.log("Nombre:", project);
+const project1=
+{
+    images: {},
+    frontmatter: {
+      title: 'Barrio Walsh',
+      ubicacion: 'González Catán',
+      imagenes: [ 'Barrio_Walsh.jpeg', 'Barrio_Walsh2.jpg', 'Barrio_Walsh3.jpg' ],
+      order: 1,
+      layout: '../../Layout/ProjectPost.astro',
+      name: 'Barrio_Walsh'
+    },
+    file: 'C:/Users/OEM/Desktop/Astro/DSI/src/pages/projects/Barrio_Walsh.md',
+    url: '/projects/Barrio_Walsh',
+  }
 ---
 
 <Layout title="Welcome to Astro.">
@@ -47,6 +70,7 @@ console.log("Nombre:", project);
 	</main>
 	<Card/>
 	<Swiper client:load/>
+	<MySwiper props={project1} client:load/>
 </Layout>
 
 <style>

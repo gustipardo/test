@@ -1,8 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper.min.css';
 
+// Import Swiper styles
+import 'swiper/css';
 export default function ImageSlider({ props }) {
-
+console.log(props)
   return (
     
     <Swiper
@@ -17,6 +18,10 @@ export default function ImageSlider({ props }) {
         </SwiperSlide>
 
       ))}
+      <SwiperSlide><img src="../../public/1.jpg"/></SwiperSlide>
+      <SwiperSlide><img src="../../public/3.jpg"/></SwiperSlide>
+      <SwiperSlide><img src="../../public/2.png"/></SwiperSlide>
+      <SwiperSlide>Slide 4</SwiperSlide>
     </Swiper>
   );
 }

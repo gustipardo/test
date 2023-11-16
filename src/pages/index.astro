@@ -1,7 +1,16 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '../Layout/Layout.astro';
 import Card from '../components/Card2.jsx';
 import Swiper from '../components/Swiper';
+
+const allPosts = await Astro.glob("./projects/*.md");
+const currentPath = Astro.url.pathname;
+    
+
+
+const currentProject = allPosts.find(post => post.url === currentPath);
+const project = currentProject;
+console.log("Nombre:", project);
 ---
 
 <Layout title="Welcome to Astro.">

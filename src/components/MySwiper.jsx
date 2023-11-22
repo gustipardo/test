@@ -25,6 +25,9 @@ console.log(props)
       <SwiperSlide><img src="../../public/1.jpg"/></SwiperSlide>
       <SwiperSlide><img src="../../public/projects/Barrio_Walsh/Barrio_Walsh.jpg"/></SwiperSlide>
       <SwiperSlide><img src="../../public/projects/Barrio_Walsh/Barrio_Walsh2.jpg"/></SwiperSlide>
+      <SwiperSlide>Slide 1</SwiperSlide>
+      <SwiperSlide>Slide 2</SwiperSlide>
+      <SwiperSlide>Slide 3</SwiperSlide>
       <SwiperSlide>Slide 4</SwiperSlide>
     </Swiper>
   );

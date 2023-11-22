@@ -11,7 +11,7 @@ export default () => {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide><img src="../../public/1.jpg"/></SwiperSlide>
+      <SwiperSlide><img src="../../public/1.jpg" style={"width: 50px"}/></SwiperSlide>
       <SwiperSlide><img src="../../public/3.jpg"/></SwiperSlide>
       <SwiperSlide><img src="../../public/2.png"/></SwiperSlide>
       <SwiperSlide>Slide 4</SwiperSlide>

@@ -18,7 +18,7 @@ console.log(props)
         </SwiperSlide>
 
       ))}
-      <SwiperSlide><img src="../../public/1.jpg"/></SwiperSlide>
+      <SwiperSlide><img src="../../public/1.jpg" transition:name="111"/></SwiperSlide>
       <SwiperSlide><img src="../../public/2.jpg"/></SwiperSlide>
       <SwiperSlide><img src="../../public/3.jpg"/></SwiperSlide>
       <SwiperSlide><img src="../../public/2.jpg"/></SwiperSlide>

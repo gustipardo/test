@@ -19,8 +19,12 @@ console.log(props)
 
       ))}
       <SwiperSlide><img src="../../public/1.jpg"/></SwiperSlide>
+      <SwiperSlide><img src="../../public/2.jpg"/></SwiperSlide>
       <SwiperSlide><img src="../../public/3.jpg"/></SwiperSlide>
-      <SwiperSlide><img src="../../public/2.png"/></SwiperSlide>
+      <SwiperSlide><img src="../../public/2.jpg"/></SwiperSlide>
+      <SwiperSlide><img src="../../public/1.jpg"/></SwiperSlide>
+      <SwiperSlide><img src="../../public/projects/Barrio_Walsh/Barrio_Walsh.jpg"/></SwiperSlide>
+      <SwiperSlide><img src="../../public/projects/Barrio_Walsh/Barrio_Walsh2.jpg"/></SwiperSlide>
       <SwiperSlide>Slide 4</SwiperSlide>
     </Swiper>
   );
